@@ -97,3 +97,4 @@ class MaxRetrievedProductView(APIView):
         product.save(update_fields=['retrieval_count'])
         serializer = ProductSerializer(product)
         return Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
+ 
